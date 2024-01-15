@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>document</title>
+  </head>
+  <body>
+    <script>
+      let a = +prompt("nhập số bất kì");
+
+      if (!isNaN(a) && a > 0) {
+        var check = 0;
+        for (let i = 1; i <= Math.sqrt(a); i++) {
+          if (a == i * i) {
+            check++;
+          }
+        }
+        if (check == 0) {
+          document.write("không phải số chính phương");
+        } else {
+          document.write("là số chính phương");
+        }
+      } else {
+        document.write("không hợp lệ");
+      }
+    </script>
+  </body>
+</html>

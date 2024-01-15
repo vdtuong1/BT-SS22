@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a = +prompt()
+        let b = +prompt()
+        if (!isNaN(a)&&!isNaN(b)) {
+            if(a%b==0){
+                console.log('Số a chia hết cho số b')
+            }else if(b%a==0){
+                console.log('số b chia hết cho số a')
+            }else{
+                console.log('hai số không chia hết được cho nhau')
+            }
+        }else{
+            document.write('không hợp lệ')
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>document</title>
+  </head>
+  <body>
+    <script>
+      let a = +prompt("nhập năm bất kì");
+
+      if (!isNaN(a) && a > 0) {
+        if (a % 400 == 0 || (a % 4 == 0 && a % 100 != 0)) {
+          document.write("là năm nhuận");
+        } else {
+          document.write("là năm không nhuận");
+        }
+      } else {
+        document.write("không hợp lệ");
+      }
+    </script>
+  </body>
+</html>
